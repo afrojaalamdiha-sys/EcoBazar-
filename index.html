@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00b207">
+  <title>EcoBazar — Fresh Organic Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🌱 Free shipping on orders over <b>$50</b></span>
+      <div class="top-links"><a href="#help">Help Center</a><a href="#faq">FAQs</a><a href="#account">My Account</a><span class="currency">USD ▾</span></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="logo" href="#"><span class="logo-mark">✿</span> Eco<span>Bazar</span></a>
+      <form class="search" id="searchForm"><span>⌕</span><input id="searchInput" type="search" placeholder="Search for products..." aria-label="Search products"><button type="submit">Search</button></form>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Wishlist" title="Wishlist">♡</button>
+        <button class="cart-button" id="cartButton" aria-label="Shopping cart"><span class="cart-icon">🛒</span><span class="cart-count" id="cartCount">0</span><span class="cart-label"><small>Shopping cart</small><b id="cartTotal">$0.00</b></span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="category-button" href="#products">☷ &nbsp; All Categories <span>⌄</span></a>
+        <div class="nav-links" id="navLinks"><a class="active" href="#">Home</a><a href="#products">Shop</a><a href="#deals">Pages</a><a href="#blog">Blog</a><a href="#about">About Us</a><a href="#contact">Contact Us</a></div>
+        <a class="support" href="tel:+18005550199">☎ &nbsp; (800) 555-0199</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> 100% ORGANIC FOOD</span>
+          <h1>Fresh &amp; Healthy<br><em>Organic</em> Food</h1>
+          <p>Enjoy the goodness of nature with fresh, healthy and organic products delivered straight to your door.</p>
+          <a class="btn btn-green" href="#products">Shop Now <span>→</span></a>
+          <div class="hero-dots"><b></b><i></i><i></i></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"></div>
+          <div class="hero-tag">100%<br><b>Fresh</b></div>
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=90" alt="Fresh vegetables in a bowl">
+          <div class="fresh-stamp">FRESH<br><strong>&amp; NATURAL</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits container">
+      <article><span class="benefit-icon">🚚</span><div><b>Free Shipping</b><small>Free shipping on all orders over $50</small></div></article>
+      <article><span class="benefit-icon">💳</span><div><b>Secure Payment</b><small>100% secure payment methods</small></div></article>
+      <article><span class="benefit-icon">♧</span><div><b>Quality Guarantee</b><small>Fresh and quality products</small></div></article>
+      <article><span class="benefit-icon">◷</span><div><b>Online Support</b><small>We support online 24/7</small></div></article>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">OUR PRODUCTS</span><h2>Introducing Our Products</h2><p>Discover fresh, organic and healthy products selected just for you.</p></div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Fresh Vegetables">Fresh Vegetables</button><button class="filter" data-filter="Fresh Fruits">Fresh Fruits</button><button class="filter" data-filter="Meat & Fish">Meat &amp; Fish</button><button class="filter" data-filter="Snacks">Snacks</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="center"><button class="btn btn-green" id="viewAll">View All Products <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="promo-strip">
+      <div class="container promo-grid">
+        <article class="promo-card promo-blue"><div><span>BEST SELLER</span><h3>100% Fresh Cheese Milk</h3><a href="#products">Shop Now →</a></div><div class="promo-emoji">🥛</div></article>
+        <article class="promo-card promo-white"><div><span>SUMMER OFFER</span><h3>Natural &amp; Fresh Juice</h3><a href="#products">Shop Now →</a></div><div class="promo-emoji">🧃</div></article>
+        <article class="promo-card promo-peach"><div><span>HEALTHY &amp; TASTY</span><h3>Healthy Nuts &amp; Dried Fruits</h3><a href="#products">Shop Now →</a></div><div class="promo-emoji">🥜</div></article>
+      </div>
+    </section>
+
+    <section class="deal-section section" id="deals">
+      <div class="container deal-inner">
+        <div class="deal-image"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=85" alt="Fresh market vegetables"></div>
+        <div class="deal-copy"><span class="eyebrow">DEAL OF THE MONTH</span><h2>Deal of the<br><em>Month</em></h2><p>Get more of the freshness you love. Enjoy special prices on our hand-picked seasonal favourites.</p><div class="countdown" id="countdown"><div><b>00</b><small>Days</small></div><div><b>00</b><small>Hours</small></div><div><b>00</b><small>Mins</small></div><div><b>00</b><small>Secs</small></div></div><a class="btn btn-green" href="#products">Shop Now <span>→</span></a></div>
+        <div class="deal-side"><img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=500&q=85" alt="Fresh leafy greens"></div>
+      </div>
+    </section>
+
+    <section class="section featured-section">
+      <div class="container"><div class="section-heading"><span class="eyebrow">TOP PICKS</span><h2>Featured Products</h2><p>Our customers' favourite picks, fresh from the farm.</p></div><div class="featured-grid" id="featuredGrid"></div></div>
+    </section>
+
+    <section class="testimonials section" id="about">
+      <div class="container"><div class="section-heading"><span class="eyebrow">TESTIMONIALS</span><h2>What Our Clients Say</h2><p>Real stories from people who love fresh food.</p></div>
+        <div class="review-grid">
+          <article class="review-card"><div class="quote">“</div><p>EcoBazar has completely changed how I shop for groceries. Everything arrives fresh, beautifully packed, and tastes amazing!</p><div class="reviewer"><img src="https://i.pravatar.cc/80?img=12" alt=""><div><b>Sarah Johnson</b><small>★★★★★</small></div></div></article>
+          <article class="review-card"><div class="quote">“</div><p>The quality is always excellent and delivery is super quick. I love knowing my family is eating fresh, healthy food.</p><div class="reviewer"><img src="https://i.pravatar.cc/80?img=11" alt=""><div><b>Michael Chen</b><small>★★★★★</small></div></div></article>
+          <article class="review-card"><div class="quote">“</div><p>A wonderful selection of organic products at fair prices. The seasonal fruits are especially delicious. Highly recommended!</p><div class="reviewer"><img src="https://i.pravatar.cc/80?img=47" alt=""><div><b>Emma Williams</b><small>★★★★★</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-banner"><div class="video-overlay"></div><div class="video-content"><span class="eyebrow">WHY CHOOSE US</span><h2>Why EcoBazar is the Best<br>Organic Farm in the World</h2><button class="play-button" id="playButton" aria-label="Play our story">▶</button><p>From our farms to your table — freshness you can trust.</p></div></section>
+
+    <section class="section blog-section" id="blog"><div class="container"><div class="section-heading"><span class="eyebrow">OUR BLOG</span><h2>Latest News</h2><p>Tips, recipes and inspiration for a healthier lifestyle.</p></div>
+      <div class="blog-grid">
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=700&q=85" alt="Fresh oranges"><div class="blog-body"><span class="blog-meta">JUL 18, 2026 &nbsp; • &nbsp; FOOD</span><h3>Top 10 Benefits of Eating Organic Citrus Fruits Every Day</h3><p>Discover why adding fresh citrus fruits to your daily routine can make a difference.</p><a href="#blog">Read More →</a></div></article>
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85" alt="Fresh homemade cake"><div class="blog-body"><span class="blog-meta">JUL 12, 2026 &nbsp; • &nbsp; RECIPES</span><h3>How to Make the Perfect Cake: Fresh Ideas for Your Kitchen</h3><p>Simple ingredients and a little inspiration make every recipe special.</p><a href="#blog">Read More →</a></div></article>
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=700&q=85" alt="Healthy fruit bowl"><div class="blog-body"><span class="blog-meta">JUL 08, 2026 &nbsp; • &nbsp; HEALTH</span><h3>Why Eating Seasonal Organic Fruits Is Better for You</h3><p>Learn how choosing seasonal produce supports a balanced lifestyle.</p><a href="#blog">Read More →</a></div></article>
+      </div>
+    </div></section>
+
+    <section class="newsletter"><div class="container newsletter-inner"><div><span class="eyebrow">STAY IN THE LOOP</span><h2>Subscribe to our Newsletter</h2><p>Get updates about our latest offers and healthy living tips.</p></div><form id="newsletterForm"><input type="email" placeholder="Your email address" required><button class="btn btn-green" type="submit">✉ Subscribe</button></form></div></section>
+  </main>
+
+  <footer class="footer" id="contact"><div class="container footer-grid"><div class="footer-about"><a class="logo footer-logo" href="#"><span class="logo-mark">✿</span> Eco<span>Bazar</span></a><p>We bring nature's goodness to your table with fresh, healthy and responsibly sourced food.</p><div class="socials"><a href="#">f</a><a href="#">𝕏</a><a href="#">◎</a><a href="#">▶</a></div></div><div><h4>My Account</h4><a href="#account">My Account</a><a href="#orders">Order History</a><a href="#cart">Shopping Cart</a><a href="#wishlist">Wishlist</a></div><div><h4>Helps</h4><a href="#contact">Contact</a><a href="#faq">FAQs</a><a href="#terms">Terms &amp; Conditions</a><a href="#privacy">Privacy Policy</a></div><div><h4>Proxy</h4><a href="#about">About Us</a><a href="#products">Shop</a><a href="#blog">Blog</a><a href="#track">Track Order</a></div><div class="app-download"><h4>Download Our App</h4><div class="app-badge">▶ <span><small>GET IT ON</small><b>Google Play</b></span></div><div class="app-badge">● <span><small>Download on the</small><b>App Store</b></span></div></div></div><div class="container footer-bottom"><span>© 2026 EcoBazar. All Rights Reserved.</span><span>We Accept: 💳 VISA &nbsp; • &nbsp; Mastercard &nbsp; • &nbsp; PayPal</span></div></footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><h3>Your Shopping Cart</h3><button id="closeCart" aria-label="Close cart">✕</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty. Let's find something fresh!</p></div><div class="drawer-foot"><div><span>Subtotal</span><b id="drawerTotal">$0.00</b></div><button class="btn btn-green" id="checkoutButton">Proceed to Checkout →</button></div></div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <script src="script.js"></script>
+</body>
+</html>
